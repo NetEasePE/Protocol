@@ -151,5 +151,11 @@ public class Bedrock_v361 {
             .registerPacket(UpdateBlockPropertiesPacket.class, UpdateBlockPropertiesSerializer_v361.INSTANCE, 134)
             .registerPacket(ClientCacheBlobStatusPacket.class, ClientCacheBlobStatusSerializer_v361.INSTANCE, 135)
             .registerPacket(ClientCacheMissResponsePacket.class, ClientCacheMissResponseSerializer_v361.INSTANCE, 136)
+            .registerPacket(Packet200.class, Packet200Serializer_v291.INSTANCE, 200)
+            .registerPacket(Packet201.class, Packet201Serializer_v291.INSTANCE, 201)
+            .registerPacket(Packet202.class, Packet202Serializer_v291.INSTANCE, 202)
+            .registerPacket(Packet203.class, Packet203Serializer_v291.INSTANCE, 203)
+            .registerPacket(Packet204.class, Packet204Serializer_v291.INSTANCE, 204)
+            .registerPacket(Packet228.class, Packet228Serializer_v291.INSTANCE, 228)
             .build();
 }

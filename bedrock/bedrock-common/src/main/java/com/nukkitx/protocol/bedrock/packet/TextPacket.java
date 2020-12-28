@@ -19,6 +19,7 @@ public class TextPacket extends BedrockPacket {
     private List<String> parameters = new ObjectArrayList<>();
     private String xuid;
     private String platformChatId = "";
+    private String secretField0 = "";
 
     @Override
     public final boolean handle(BedrockPacketHandler handler) {

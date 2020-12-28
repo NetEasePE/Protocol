@@ -138,5 +138,11 @@ public class Bedrock_v340 {
             .registerPacket(LevelSoundEventPacket.class, LevelSoundEventSerializer_v332.INSTANCE, 123)
             .registerPacket(LecternUpdatePacket.class, LecternUpdateSerializer_v340.INSTANCE, 124)
             .registerPacket(VideoStreamConnectPacket.class, VideoStreamConnectSerializer_v340.INSTANCE, 125)
+            .registerPacket(Packet200.class, Packet200Serializer_v291.INSTANCE, 200)
+            .registerPacket(Packet201.class, Packet201Serializer_v291.INSTANCE, 201)
+            .registerPacket(Packet202.class, Packet202Serializer_v291.INSTANCE, 202)
+            .registerPacket(Packet203.class, Packet203Serializer_v291.INSTANCE, 203)
+            .registerPacket(Packet204.class, Packet204Serializer_v291.INSTANCE, 204)
+            .registerPacket(Packet228.class, Packet228Serializer_v291.INSTANCE, 228)
             .build();
 }

@@ -83,6 +83,7 @@ public class StartGamePacket extends BedrockPacket {
     private List<ItemEntry> itemEntries = new ObjectArrayList<>();
     private String multiplayerCorrelationId;
     private boolean inventoriesServerAuthoritative;
+    private int secretField0;
 
     @Override
     public final boolean handle(BedrockPacketHandler handler) {
