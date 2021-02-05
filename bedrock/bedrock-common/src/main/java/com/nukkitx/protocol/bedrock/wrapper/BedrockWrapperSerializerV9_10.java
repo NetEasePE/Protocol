@@ -82,6 +82,7 @@ public class BedrockWrapperSerializerV9_10 extends BedrockWrapperSerializer {
                 }
             }
         } catch (DataFormatException e) {
+            log.trace("Buffer contents\n{}", ByteBufUtil.prettyHexDump(compressed.readerIndex(0)));
             throw new RuntimeException("Unable to inflate buffer data", e);
         } finally {
             if (decompressed != null) {

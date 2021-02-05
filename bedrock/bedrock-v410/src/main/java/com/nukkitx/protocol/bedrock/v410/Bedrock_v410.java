@@ -101,7 +101,7 @@ public class Bedrock_v410 {
             .registerPacket(BossEventPacket.class, BossEventSerializer_v291.INSTANCE, 74)
             .registerPacket(ShowCreditsPacket.class, ShowCreditsSerializer_v291.INSTANCE, 75)
             .registerPacket(AvailableCommandsPacket.class, AvailableCommandsSerializer_v388.INSTANCE, 76)
-            .registerPacket(CommandRequestPacket.class, CommandRequestSerializer_v291.INSTANCE, 77)
+            .registerPacket(CommandRequestPacket.class, CommandRequestSerializer_v410.INSTANCE, 77)
             .registerPacket(CommandBlockUpdatePacket.class, CommandBlockUpdateSerializer_v361.INSTANCE, 78)
             .registerPacket(CommandOutputPacket.class, CommandOutputSerializer_v291.INSTANCE, 79)
             .registerPacket(UpdateTradePacket.class, UpdateTradeSerializer_v354.INSTANCE, 80)
