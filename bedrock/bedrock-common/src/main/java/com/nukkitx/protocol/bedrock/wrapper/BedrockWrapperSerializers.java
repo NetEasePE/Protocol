@@ -10,7 +10,8 @@ public class BedrockWrapperSerializers {
 
     static {
         SERIALIZERS.put(7, BedrockWrapperSerializerV7.INSTANCE);
-        SERIALIZERS.put(8, BedrockWrapperSerializerV8.INSTANCE);
+//        SERIALIZERS.put(8, BedrockWrapperSerializerV8.INSTANCE);
+        SERIALIZERS.put(8, BedrockWrapperSerializerV9_10.V10);
         SERIALIZERS.put(9, BedrockWrapperSerializerV9_10.V9);
         SERIALIZERS.put(10, BedrockWrapperSerializerV9_10.V10);
         SERIALIZERS.defaultReturnValue(BedrockWrapperSerializerV9_10.V9);

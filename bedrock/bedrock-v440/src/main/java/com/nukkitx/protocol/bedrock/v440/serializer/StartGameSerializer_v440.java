@@ -3,13 +3,13 @@ package com.nukkitx.protocol.bedrock.v440.serializer;
 import com.nukkitx.protocol.bedrock.BedrockPacketHelper;
 import com.nukkitx.protocol.bedrock.BedrockSession;
 import com.nukkitx.protocol.bedrock.packet.StartGamePacket;
-import com.nukkitx.protocol.bedrock.v428.serializer.StartGameSerializer_v428;
+import com.nukkitx.protocol.bedrock.v422.serializer.StartGameSerializer_v422;
 import io.netty.buffer.ByteBuf;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class StartGameSerializer_v440 extends StartGameSerializer_v428 {
+public class StartGameSerializer_v440 extends StartGameSerializer_v422 {
 
     public static final StartGameSerializer_v440 INSTANCE = new StartGameSerializer_v440();
 

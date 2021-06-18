@@ -282,7 +282,7 @@ public abstract class BedrockSession implements MinecraftSession<BedrockPacket> 
     }
 
     public InetSocketAddress getRealAddress() {
-        return this.connection.getRealAddress();
+        return this.connection.getAddress();
     }
 
     public boolean isClosed() {

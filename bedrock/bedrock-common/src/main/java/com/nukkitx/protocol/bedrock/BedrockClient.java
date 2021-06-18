@@ -47,7 +47,7 @@ public class BedrockClient extends Bedrock {
         if (this.session != null && !this.session.isClosed()) {
             this.session.disconnect();
         }
-        this.rakNetClient.close(force);
+        this.rakNetClient.close();
         this.tickFuture.cancel(false);
     }
 

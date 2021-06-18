@@ -1,4 +1,4 @@
-package com.nukkitx.protocol.bedrock.v428.serializer;
+package com.nukkitx.protocol.bedrock.v422.serializer;
 
 import com.nukkitx.nbt.NbtMap;
 import com.nukkitx.network.VarInts;
@@ -15,9 +15,9 @@ import lombok.NoArgsConstructor;
 
 @SuppressWarnings("DuplicatedCode")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class StartGameSerializer_v428 extends StartGameSerializer_v419 {
+public class StartGameSerializer_v422 extends StartGameSerializer_v419 {
 
-    public static final StartGameSerializer_v428 INSTANCE = new StartGameSerializer_v428();
+    public static final StartGameSerializer_v422 INSTANCE = new StartGameSerializer_v422();
 
     @Override
     public void serialize(ByteBuf buffer, BedrockPacketHelper helper, StartGamePacket packet) {

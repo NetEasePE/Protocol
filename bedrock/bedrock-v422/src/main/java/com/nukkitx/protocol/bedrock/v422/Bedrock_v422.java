@@ -9,7 +9,6 @@ import com.nukkitx.protocol.bedrock.v313.serializer.BiomeDefinitionListSerialize
 import com.nukkitx.protocol.bedrock.v313.serializer.NetworkChunkPublisherUpdateSerializer_v313;
 import com.nukkitx.protocol.bedrock.v332.serializer.NetworkStackLatencySerializer_v332;
 import com.nukkitx.protocol.bedrock.v332.serializer.SpawnParticleEffectSerializer_v332;
-import com.nukkitx.protocol.bedrock.v332.serializer.TextSerializer_v332;
 import com.nukkitx.protocol.bedrock.v354.serializer.*;
 import com.nukkitx.protocol.bedrock.v361.serializer.*;
 import com.nukkitx.protocol.bedrock.v388.serializer.*;
@@ -18,9 +17,7 @@ import com.nukkitx.protocol.bedrock.v390.serializer.PlayerListSerializer_v390;
 import com.nukkitx.protocol.bedrock.v390.serializer.PlayerSkinSerializer_v390;
 import com.nukkitx.protocol.bedrock.v407.serializer.*;
 import com.nukkitx.protocol.bedrock.v419.serializer.*;
-import com.nukkitx.protocol.bedrock.v422.serializer.FilterTextSerializer_v422;
-import com.nukkitx.protocol.bedrock.v422.serializer.ItemStackResponseSerializer_v422;
-import com.nukkitx.protocol.bedrock.v422.serializer.ResourcePacksInfoSerializer_v422;
+import com.nukkitx.protocol.bedrock.v422.serializer.*;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
@@ -37,9 +34,9 @@ public class Bedrock_v422 {
             .registerPacket(ResourcePacksInfoPacket.class, ResourcePacksInfoSerializer_v422.INSTANCE, 6)
             .registerPacket(ResourcePackStackPacket.class, ResourcePackStackSerializer_v419.INSTANCE, 7)
             .registerPacket(ResourcePackClientResponsePacket.class, ResourcePackClientResponseSerializer_v291.INSTANCE, 8)
-            .registerPacket(TextPacket.class, TextSerializer_v332.INSTANCE, 9)
+            .registerPacket(TextPacket.class, TextSerializer_v422.INSTANCE, 9)
             .registerPacket(SetTimePacket.class, SetTimeSerializer_v291.INSTANCE, 10)
-            .registerPacket(StartGamePacket.class, StartGameSerializer_v419.INSTANCE, 11)
+            .registerPacket(StartGamePacket.class, StartGameSerializer_v422.INSTANCE, 11)
             .registerPacket(AddPlayerPacket.class, AddPlayerSerializer_v388.INSTANCE, 12)
             .registerPacket(AddEntityPacket.class, AddEntitySerializer_v313.INSTANCE, 13)
             .registerPacket(RemoveEntityPacket.class, RemoveEntitySerializer_v291.INSTANCE, 14)
@@ -104,7 +101,7 @@ public class Bedrock_v422 {
             .registerPacket(BossEventPacket.class, BossEventSerializer_v291.INSTANCE, 74)
             .registerPacket(ShowCreditsPacket.class, ShowCreditsSerializer_v291.INSTANCE, 75)
             .registerPacket(AvailableCommandsPacket.class, AvailableCommandsSerializer_v388.INSTANCE, 76)
-            .registerPacket(CommandRequestPacket.class, CommandRequestSerializer_v291.INSTANCE, 77)
+            .registerPacket(CommandRequestPacket.class, CommandRequestSerializer_v422.INSTANCE, 77)
             .registerPacket(CommandBlockUpdatePacket.class, CommandBlockUpdateSerializer_v361.INSTANCE, 78)
             .registerPacket(CommandOutputPacket.class, CommandOutputSerializer_v291.INSTANCE, 79)
             .registerPacket(UpdateTradePacket.class, UpdateTradeSerializer_v354.INSTANCE, 80)
@@ -189,6 +186,12 @@ public class Bedrock_v422 {
             .registerPacket(CorrectPlayerMovePredictionPacket.class, CorrectPlayerMovePredictionSerializer_v419.INSTANCE, 161)
             .registerPacket(ItemComponentPacket.class, ItemComponentSerializer_v419.INSTANCE, 162)
             .registerPacket(FilterTextPacket.class, FilterTextSerializer_v422.INSTANCE, 163)
+            .registerPacket(Packet200.class, Packet200Serializer_v422.INSTANCE, 200)
+            .registerPacket(Packet201.class, Packet201Serializer_v422.INSTANCE, 201)
+            .registerPacket(Packet202.class, Packet202Serializer_v422.INSTANCE, 202)
+            .registerPacket(Packet203.class, Packet203Serializer_v422.INSTANCE, 203)
+            .registerPacket(Packet204.class, Packet204Serializer_v422.INSTANCE, 204)
+            .registerPacket(Packet228.class, Packet228Serializer_v422.INSTANCE, 228)
             .build();
 
 }

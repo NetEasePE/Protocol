@@ -672,4 +672,28 @@ public interface BedrockPacketHandler extends PacketHandler {
     default boolean handle(SimulationTypePacket packet) {
         return false;
     }
+
+    default boolean handle(Packet200 packet) {
+        return false;
+    }
+
+    default boolean handle(Packet201 packet) {
+        return false;
+    }
+
+    default boolean handle(Packet202 packet) {
+        return false;
+    }
+
+    default boolean handle(Packet203 packet) {
+        return false;
+    }
+
+    default boolean handle(Packet204 packet) {
+        return false;
+    }
+
+    default boolean handle(Packet228 packet) {
+        return false;
+    }
 }
